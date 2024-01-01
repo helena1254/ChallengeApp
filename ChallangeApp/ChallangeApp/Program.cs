@@ -22,26 +22,3 @@ employee3.AddScore(1);
 employee3.AddScore(4);
 employee3.AddScore(5);
 
-var result1 = employee1.Result;
-var result2 = employee2.Result;
-var result3 = employee3.Result;
-
-int maxResult = -1;
-Employee employeeWithMaxResult = null;
-
-List<Employee> employees = new List<Employee>()
-{
-    employee1, employee2, employee3
-};
-
-foreach(var employee in employees)
-{
-    if(employee.Result > maxResult)
-    {
-        maxResult = employee.Result;
-        employeeWithMaxResult = employee;
-    }
-}
-Console.WriteLine("Pracownikiem z najwyższą liczbą ocen zostaje " + employeeWithMaxResult.Name + " " + employeeWithMaxResult.Surname + " "
-    + employeeWithMaxResult.Age + " lat, która zdobyła: " + maxResult +" "+ "punktów.");
-
