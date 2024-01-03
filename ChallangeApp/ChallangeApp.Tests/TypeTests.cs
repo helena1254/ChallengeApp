@@ -6,9 +6,9 @@
         public void TestTwoEmploee()
         {
             var employee1 = GetEmployee("Adam", "Pawłowski", 41);
-            var employee2 = GetEmployee("Adam", "Pjarski", 41);
+            var employee2 = GetEmployee("Adam", "Pawłowski", 41);
 
-            Assert.AreEqual(employee1.Age, employee2.Age);
+            Assert.AreEqual(employee1.Surname, employee2.Surname);
         }
 
         [Test]
